@@ -1,0 +1,16 @@
+.DS_Store
+
+# Editor directories and files
+.vscode
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+/logs/*
+!/logs
+/vendor
+/build
+Homestead.json
+Homestead.yaml
