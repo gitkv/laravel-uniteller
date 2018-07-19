@@ -60,9 +60,7 @@ use Tmconsulting\Uniteller\Payment\PaymentBuilder;
 $builder = (new PaymentBuilder())
     ->setOrderIdp('invoice_number')
     ->setSubtotalP(10)
-    ->setCustomerIdp('customer_id')
-    ->setUrlReturnOk('http://google.ru/?q=success')
-    ->setUrlReturnNo('http://google.ru/?q=failure');
+    ->setCustomerIdp('customer_id');
 
 $redirectUrl = Uniteller::pay($builder);
 ```

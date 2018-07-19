@@ -50,6 +50,10 @@ class UnitellerBase {
      * @return string|void
      */
     public function pay(PaymentBuilder $builder, bool $getUrl = true) {
+        if (!$builder->getUrlReturnOk())
+            $builder->setUrlReturnOk($this->successUrl);
+        if (!$builder->getUrlReturnNo())
+            $builder->setUrlReturnNo($this->failureUrl);
         $payment = $this->uniteller->payment($builder);
 
         return $getUrl ? $payment->getUri() : $payment->go();
