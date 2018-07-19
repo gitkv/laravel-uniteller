@@ -18,8 +18,6 @@ abstract class AbstractServiceProvider extends ServiceProvider {
             class_alias(UnitellerBase::class, Uniteller::class);
         }*/
 
-        $this->app->configure('uniteller');
-
         $this->mergeConfigFrom(
             __DIR__ . '/../config/uniteller.php',
             'uniteller'

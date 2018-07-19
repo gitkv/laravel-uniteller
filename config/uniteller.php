@@ -3,7 +3,7 @@ return [
     'shopId'       => env('UNITELLER_SHOP_ID'),
     'login'        => env('UNITELLER_LOGIN'),
     'password'     => env('UNITELLER_PASSWORD'),
-    'baseUrl'      => env('UNITELLER_BASE_URL'),
+    'baseUrl'      => "https://wpay.uniteller.ru",
 
     /**
      * If 'useRoutes' is set to true, the package defines three new routes:

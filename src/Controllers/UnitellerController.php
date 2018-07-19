@@ -8,13 +8,14 @@ use gitkv\Uniteller\Facade\Uniteller;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Http\Request;
 
-
 class UnitellerController extends Controller {
 
     public function callback(Request $request) {
         $payload = $request->all();
         Log::debug('Uniteller payment callback', $payload);
         if (!Uniteller::verifySignature($request->input('Signature'), $request->only('Order_ID', 'Status'))) {
+            Log::error('Uniteller payment callback: Invalid signature');
+
             return 'fail';
         }
         event(new UnitellerCallbackEvent($payload));
