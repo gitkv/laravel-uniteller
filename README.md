@@ -91,7 +91,7 @@ $result = Uniteller::recurrentPay($builder);
 #### Method "Receive results":
 ```php
 <?php
-use gitkv\Uniteller\Uniteller;
+use gitkv\Uniteller\Facade\Uniteller;
 
 $result = Uniteller::receiveResult($orderIdp);
 ```
