@@ -27,7 +27,7 @@
         "issues": "https://github.com/gitkv/laravel-uniteller/issues",
         "source": "https://github.com/gitkv/laravel-uniteller"
     },
-    "minimum-stability": "dev-master",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "optimize-autoloader": true,
     "require-dev": {
