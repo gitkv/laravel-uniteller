@@ -2,12 +2,12 @@
 
 namespace gitkv\Uniteller;
 
+
 use Tmconsulting\Uniteller\Cancel\CancelBuilder;
 use Tmconsulting\Uniteller\Client;
 use Tmconsulting\Uniteller\Order\Order;
 use Tmconsulting\Uniteller\Payment\PaymentBuilder;
 use Tmconsulting\Uniteller\Recurrent\RecurrentBuilder;
-
 
 /**
  * Class UnitellerBase
@@ -56,7 +56,12 @@ class UnitellerBase {
             $builder->setUrlReturnNo($this->failureUrl);
         $payment = $this->uniteller->payment($builder);
 
-        return $getUrl ? $payment->getUri() : $payment->go();
+        $url = $payment->getUri();
+
+        if ($getUrl)
+            return $url;
+
+        redirect()->to($url);
     }
 
     /**
