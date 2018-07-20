@@ -3,7 +3,7 @@ Laravel Uniteller
 
 [![Build Status](https://travis-ci.org/tmconsulting/uniteller-php-sdk.svg?branch=0.2.0)](https://travis-ci.org/tmconsulting/uniteller-php-sdk)
 
-Laraval / Lumen package for integration with Uniteller payment processing.
+Laravel / Lumen package for integration with Uniteller payment processing.
 The package is based on [tmconsulting/uniteller-php-sdk/](https://github.com/tmconsulting/uniteller-php-sdk/).
 
 Requires:
