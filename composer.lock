@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "92d7517bf2e7f61ac376302ca21dfe70",
+    "content-hash": "822b4be605475151e27742d27e20b1fd",
     "packages": [
         {
             "name": "guzzlehttp/guzzle",
@@ -405,16 +405,16 @@
         },
         {
             "name": "tmconsulting/uniteller-php-sdk",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tmconsulting/uniteller-php-sdk.git",
-                "reference": "93d0c1cdbd31827f84537674cf073cfa75a60bc5"
+                "reference": "c296f4c9416e0445b8ae93d3ca4dc99423dc8d6e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tmconsulting/uniteller-php-sdk/zipball/93d0c1cdbd31827f84537674cf073cfa75a60bc5",
-                "reference": "93d0c1cdbd31827f84537674cf073cfa75a60bc5",
+                "url": "https://api.github.com/repos/tmconsulting/uniteller-php-sdk/zipball/c296f4c9416e0445b8ae93d3ca4dc99423dc8d6e",
+                "reference": "c296f4c9416e0445b8ae93d3ca4dc99423dc8d6e",
                 "shasum": ""
             },
             "require": {
@@ -447,7 +447,7 @@
                 }
             ],
             "description": "PHP Library for integration with Uniteller payment processing.",
-            "time": "2018-07-17T10:25:56+00:00"
+            "time": "2018-07-20T12:28:43+00:00"
         }
     ],
     "packages-dev": [

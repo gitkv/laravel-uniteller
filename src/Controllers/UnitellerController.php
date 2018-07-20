@@ -13,7 +13,7 @@ class UnitellerController extends Controller {
     public function callback(Request $request) {
         $payload = $request->all();
         Log::debug('Uniteller payment callback', $payload);
-        if (!Uniteller::verifySignature($request->input('Signature'), $request->only('Order_ID', 'Status'))) {
+        if (!Uniteller::verifyCallbackRequest($payload)) {
             Log::error('Uniteller payment callback: Invalid signature');
 
             return 'fail';

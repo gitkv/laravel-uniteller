@@ -14,7 +14,7 @@
     "type": "library",
     "require": {
         "php": ">=7.1",
-        "tmconsulting/uniteller-php-sdk": "^0.2.0"
+        "tmconsulting/uniteller-php-sdk": "^0.2.1"
     },
     "autoload": {
         "psr-4": {

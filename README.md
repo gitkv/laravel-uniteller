@@ -109,7 +109,7 @@ $result = Uniteller::cancel($builder);
 <?php
 use gitkv\Uniteller\Facade\Uniteller;
 
-if (! Uniteller::verifySignature('signature_from_post_params', ['all_parameters_from_post'])) {
+if (! Uniteller::verifyCallbackRequest(['all_parameters_from_post_with_signature'])) {
     return 'invalid_signature';
 }
 ```

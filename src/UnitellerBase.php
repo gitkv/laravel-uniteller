@@ -85,12 +85,11 @@ class UnitellerBase {
     }
 
     /**
-     * @param string $signature
      * @param array $postParams
      * @return bool
      */
-    public function verifySignature(string $signature, array $postParams) {
-        return $this->uniteller->getSignaturePayment()->verify($signature, $postParams);
+    public function verifyCallbackRequest(array $postParams) {
+        return $this->uniteller->verifyCallbackRequest($postParams);
     }
 
     /**
